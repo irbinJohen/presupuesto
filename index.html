@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Presupuestos</title>
+</head>
+<body>
+    <h1>Generador de Presupuestos</h1>
+    <div id="formulario">
+        <label>Descripción del Producto: <input type="text" id="descripcion"></label><br>
+        <label>Cantidad: <input type="number" id="cantidad" min="1" value="1"></label><br>
+        <label>Precio Unitario: <input type="number" id="precio" min="0" value="0"></label><br>
+        <button onclick="agregarProducto()">Agregar Producto</button>
+    </div>
+
+    <h2>Presupuesto:</h2>
+    <ul id="lista-productos"></ul>
+    <p><strong>Subtotal:</strong> $<span id="subtotal">0.00</span></p>
+    <p><strong>Impuesto (21%):</strong> $<span id="impuesto">0.00</span></p>
+    <p><strong>Total:</strong> $<span id="total">0.00</span></p>
+</body>
+<script src="script.js"></script>
+</html>
